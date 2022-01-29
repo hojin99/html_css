@@ -9,3 +9,14 @@ npm i node-sass -g
 node-sass --watch html/basic/basic.scss html/basic/basic.css  
 Live Server를 이용해서 웹브라우저를 실행해서 테스트  
 
+## 참조  
+
+* html  
+http://www.tcpschool.com/html/intro  
+
+* css  
+http://www.tcpschool.com/css/intro  
+https://www.w3schools.com/css/default.asp  
+
+* scss  
+https://sass-lang.com/documentation/syntax  
