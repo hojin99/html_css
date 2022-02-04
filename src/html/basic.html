@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* 방문전 링크 */
+        a:link    { color: teal; }
+/* 방문한 링크 */    
+        a:visited { color: maroon; text-decoration: none }
+/* 링크 마우스오버 */      
+        a:hover   { color: yellow; text-decoration: none }
+/* 링크 마우스다운 */      
+        a:active  { color: red; text-decoration: none }
+    
+    </style>    
+</head>
+<body>
+    <a href="#bookmark"><p>페이지 특정 위치로 이동</p></a>
+
+    <h1 style="background-color:white">
+
+        style 속성을 이용한 배경색 변경(background-color:white)
+    
+    </h1>
+    <h1 style="color:rgb(0,0,255)">
+        style 속성을 이용한 글자색 변경(color:rgb)
+    
+    </h1>
+    <h1 style="color:#0000FF">
+        style 속성을 이용한 글자색 변경(color:#0000FF)
+    
+    </h1>    
+    <h1 style="font-size:250%">
+        style 속성을 이용한 글자 크기 변경(font-size)
+    
+    </h1>    
+    <h1 style="text-align:center">
+
+        style 속성을 이용한 문단 정렬 변경(text-align)
+    
+    </h1>
+
+    <a href="/src/html/text.html">
+
+        <h2>이 링크를 클릭해 보세요!(a href)</h2>
+    
+    </a>   
+
+    <h2><a href="/src/html/text.html" target="_blank">blank</a></h2>
+
+    <h2><a href="/src/html/text.html" target="_self">self</a></h2>
+    
+    <h2><a href="/src/html/basic_pop.html" target="myframe">myframe</a></h2>
+    
+    <iframe name="myframe" style="width:50%; height: 330px"></iframe>   
+
+    <br>
+    <img src="/img_html5_logo.png" alt="이미지가 없나봐요..(img)">
+
+    <br>
+    <h2>이미지 맵 - Lie, Truth클릭</h2>
+    <img src="/src/resource/img_imagemap.jpg" alt="진실혹은거짓" usemap="#vending" style="width:320px; height:240px" />
+    <map name="vending">
+    
+        <area shape="rect" coords="90,60,180,130" alt="거짓"
+    
+            href="https://ko.wikipedia.org/wiki/%EA%B1%B0%EC%A7%93%EB%A7%90">
+    
+        <area shape="rect" coords="210,200,70,130" alt="진실"
+    
+            href="https://ko.wikipedia.org/wiki/%EC%A7%84%EC%8B%A4">
+    
+    </map>   
+
+    <ul>
+
+        <li>사과(ul, li)</li>
+    
+        <li>멜론</li>
+    
+        <li>바나나</li>
+    
+    </ul>
+    <ul style="list-style-type: square">
+
+        <li>수박(ul style)</li>
+    
+        <li>참외</li>
+    
+        <li>옥수수</li>
+    
+    </ul>
+    <ol>
+
+        <li>사과(ol,li)</li>
+    
+        <li>멜론</li>
+    
+        <li>바나나</li>
+    
+    </ol>
+    <ol style="list-style-type: upper-alpha">
+
+        <li>수박(ol style)</li>
+    
+        <li>참외</li>
+    
+        <li>옥수수</li>
+    
+    </ol>
+    <dl>
+
+        <dt>호박(dl, dt, dd)</dt>
+    
+        <dd>- 박과의 한해살이 덩굴성 채소</dd>
+    
+        <dt>상추</dt>
+    
+        <dd>- 국화과의 한해살이 또는 두해살이풀</dd>
+    
+    </dl>
+
+    <h2>table, tr, th, td</h2>
+    <table style="width:50%">
+
+        <tr style="background-color:lightgrey">
+    
+            <th>참치</th>
+    
+            <th>고래</th>      
+    
+        </tr>
+    
+        <tr>
+    
+            <td>상어</td>
+    
+            <td>문어</td>
+    
+        </tr>
+    
+        <tr>
+    
+            <td>오징어</td>
+    
+            <td>고등어</td>
+    
+        </tr>
+    
+    </table>
+    <h2><a name="bookmark"></a>여기로 이동</h2>
+
+    <p>
+    display 속성값이 블록(block)인 요소는 언제나 새로운 라인(line)에서 시작하며, 해당 라인의 모든 너비를 차지합니다.<br>
+    p, div, h, ul, ol, form요소는 display 속성값이 블록(block)인 대표적인 요소입니다.<br>
+
+    <div style="background-color:lightgrey; color:green; text-align:center">
+
+        <h1>div요소를 이용한 스타일 적용</h1>
+    
+        <p>이렇게 div요소로 여러 요소들을 묶은 다음에 style 속성과 클래스 등을 이용하여
+    
+        한 번에 스타일을 적용할 수 있습니다.</p>
+    
+    </div>
+
+    display 속성값이 인라인(inline)인 요소는 새로운 라인(line)에서 시작하지 않습니다.<br>
+    또한, 요소의 너비도 해당 라인 전체가 아닌 해당 HTML 요소의 내용(content)만큼만 차지합니다.<br>
+
+    <p>이렇게
+
+        <span style="border: 3px solid red">span요소로 텍스트의 일부분</span>
+        
+        만을 따로 묶은 후에 스타일을 적용할 수 있습니다.</p>
+    </p>
+
+        
+</body>
+</html>

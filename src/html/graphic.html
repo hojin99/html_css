@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+
+    <h3>canvas</h3>
+	<canvas id="drawCanvas" width="300px" height="200px" style="border: 1px solid #993300">
+		이 문장은 사용자의 웹 브라우저가 canvas 요소를 지원하지 않을 때 나타납니다!
+	</canvas>
+
+	<script>
+		var paper = document.getElementById("drawCanvas");
+		var context = paper.getContext("2d");
+		context.font = "40px Arial";
+		context.fillText("CANVAS", 50, 90);
+		context.strokeText("HTML5", 80, 150);
+	</script>
+
+	<h3>svg</h3>
+	<svg width="300" height="300">
+		<polygon points="10,100 190,100 30,200 100,40 170,200"
+			stroke="orange" stroke-width="5" fill="yellow"/>
+		이 문장은 사용자의 웹 브라우저가 svg 요소를 지원하지 않을 때 나타납니다!
+	</svg>
+</body>
+</html>

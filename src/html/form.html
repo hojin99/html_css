@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="basic.css">
+</head>
+<body>
+    <form id="mainform" action="/examples/media/request.php">
+
+        <h3>text, text placeholder, text required</h3>
+        사용자 : <input type="text" name="username" readonly value="readonly"><br>
+        사용자 : <input type="text" name="username" placeholder="홍길동"><br>
+        사용자 : <input type="text" name="username" required><br>
+
+        <h3>password(autofocus)</h3>
+        비밀번호 : <br><input type="password" name="password" autofocus>
+
+        <h3>number, number step</h3>
+        <input type="number" name="favnum" min="1" max="9">
+        <input type="number" name="favnum" min="1" max="9" step="3">
+
+        <h3>range, range step</h3>
+        1<input type="range" name="favnum" min="1" max="9">9
+        1<input type="range" name="favnum" min="1" max="9" step="3">9
+
+        <h3>color</h3>
+        <input type="color" name="favcolor" value="#CC6600">
+
+        <h3>date,time,datetime-local,month,week</h3>
+        <input type="date" name="startday">
+        <input type="time" name="birthtime">
+        <input type="datetime-local" name="starttime">
+        <input type="month" name="birthmonth">
+        <input type="week" name="nthweek">
+        
+        <h3>email, email pattern</h3>
+        <input type="email" name="email">
+        <input type="email" name="email" pattern="[a-zA-Z0-9]+[@][a-zA-Z0-9]+[.]+[a-zA-Z]+[.]*[a-zA-Z]*" title="이메일 양식">
+
+        <h3>url</h3>
+        <input type="url" name="url">
+
+        <h3>search</h3>
+        <input type="search" name="keyword">
+
+        <h3>radio</h3>
+        <input type="radio" name="lecture" value="html" checked> HTML <br>
+
+        <input type="radio" name="lecture" value="css"> CSS <br>
+    
+        <input type="radio" name="lecture" value="java"> JAVA <br>
+    
+        <input type="radio" name="lecture" value="cpp" disabled> C++(disabled)     
+        
+        <h3>checkbox</h3>
+        <input type="checkbox" name="lecture" value="html" checked> HTML <br>
+
+        <input type="checkbox" name="lecture" value="css"> CSS <br>
+    
+        <input type="checkbox" name="lecture" value="java"> JAVA <br>
+    
+        <input type="checkbox" name="lecture" value="cpp"> C++
+
+        <h3>file, file multiple</h3>
+        <input type="file" name="upload_file" accept="image/*">
+        <input type="file" name="upload_file" accept="image/*" multiple>
+
+        <h3>select</h3>
+        <select name="fruit">
+
+            <option value="apple"> 사과
+        
+            <option value="orange" selected> 귤
+        
+            <option value="strawberry"> 딸기
+        
+            <option value="peach"> 복숭아
+        
+        </select>    
+        
+        <h3>datalist</h3>
+        <input list="lectures" name="lecture">
+        <datalist id="lectures">
+
+            <option value="HTML">
+
+            <option value="CSS">
+
+            <option value="JAVA">
+
+            <option value="C++">
+
+        </datalist>
+
+        
+        <h3>textarea</h3>
+        <textarea name="message" rows="5" cols="30">
+
+            여기에 적으세요.
+        
+        </textarea>
+        <br>
+        <button type="button" onclick="alert('버튼을 클릭하셨군요!')">
+
+            버튼을 눌러주세요.
+        
+        </button>
+
+        <h3>submit</h3>
+        <input type="submit" value="전송">
+
+        <h3>fieldset</h3>
+        <fieldset>
+
+            <legend>입력 양식</legend>
+    
+            이름 : <br>
+    
+            <input type="text" name="username"><br>
+    
+            이메일 : <br>
+    
+            <input type="text" name="email"><br><br>
+    
+            <input type="submit" value="전송">
+    
+        </fieldset>        
+
+    </form>
+
+    <hr>
+    비밀번호(form) : <input type="password" name="password" form="mainform">
+</body>
+</html>
