@@ -1,0 +1,20 @@
+div.page {
+	border: 3px solid black;
+}
+div.overflow {
+	border: 3px solid black;
+	overflow: auto;
+}
+h2 { text-align: center; }
+header{ border: 3px solid #FFD700; }
+nav {
+	border: 3px solid #FF1493;
+	width: 150px;
+	height: 400px;
+	float: left;
+}
+section {
+	border: 3px solid #00BFFF;
+	margin-left: 156px;
+}
+footer{ border: 3px solid #00FA9A; }

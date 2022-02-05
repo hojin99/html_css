@@ -1,0 +1,40 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	border: 3px solid red;
+	width: 100%;
+	height: 1000px;
+	position: relative;
+}
+.position {
+	width: 150px;
+	height: 50px;
+	top: 100px;
+	left: 100px;
+}
+.static {
+	
+	border: 3px solid black;
+	position: static;
+}
+.relative {
+	border: 3px solid green;
+	position: relative;
+}
+.fixed {
+	background-color: olive;
+	border: 3px solid orange;
+	position: fixed;
+}
+.absolute {
+	background-color: yellow;
+	border: 3px solid blue;
+	position: absolute;
+}
+
+.zindex-100 {
+	z-index: 100;
+}

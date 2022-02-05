@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "basic": "node-sass --watch src/css/basic.scss src/css/basic.css",
     "box": "node-sass --watch src/css/box.scss src/css/box.css",
-    "text": "node-sass --watch src/css/text.scss src/css/text.css"
+    "text": "node-sass --watch src/css/text.scss src/css/text.css",
+    "float": "node-sass --watch src/css/float.scss src/css/float.css",
+    "position": "node-sass --watch src/css/position.scss src/css/position.css"
     
   },
   "repository": {
