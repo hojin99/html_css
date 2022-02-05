@@ -1,0 +1,25 @@
+div {
+  border: 2px solid lightsalmon; }
+
+.box {
+  height: 200px;
+  width: 500px; }
+
+.box-percent {
+  width: 100%; }
+
+.box-max {
+  max-height: 200px;
+  max-width: 500px; }
+
+.box-min {
+  min-height: 200px;
+  min-width: 500px; }
+
+.box-model {
+  background-color: red;
+  color: white;
+  width: 400px;
+  padding: 30px 10px 30px 10px;
+  border: 10px solid maroon;
+  margin: 10px 30px 10px 30px; }
