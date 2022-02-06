@@ -1,8 +1,13 @@
 # html_css
 
 ## 환경  
-node-sass 설치  
-npm i node-sass -g  
+
+* 개발툴 - Visual Studio Code 사용
+
+* 웹브라우저 - Chrome  
+
+* node-sass 설치  
+`npm i node-sass -g`  
 
 ## 실행  
 * 자동으로 scss를 css로 변환하도록 대상 scss폴더에 대해서 감시 실행 (package.json의 scripts이용)  
