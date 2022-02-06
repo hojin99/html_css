@@ -1,0 +1,14 @@
+div {
+  border: 3px solid #F08080; }
+
+div p {
+  background-color: aqua; }
+
+div > p {
+  color: crimson; }
+
+div ~ p {
+  background-color: #FFE4E1; }
+
+div + p {
+  color: red; }

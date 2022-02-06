@@ -4,11 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "box": "node-sass --watch src/css/box.scss src/css/box.css",
-    "text": "node-sass --watch src/css/text.scss src/css/text.css",
-    "float": "node-sass --watch src/css/float.scss src/css/float.css",
-    "position": "node-sass --watch src/css/position.scss src/css/position.css"
-    
+    "watch": "node-sass --watch src/css/ -o src/css/"    
   },
   "repository": {
     "type": "git",

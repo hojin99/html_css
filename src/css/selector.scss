@@ -1,0 +1,14 @@
+
+
+		div{ border: 3px solid #F08080; }
+
+        // div 태그 아래의 모든 p (자손)
+        div p { background-color: aqua;}
+        // div 태그 바로 아래의 모든 p (자식)
+        div > p { color: crimson;}
+
+        // div 태그 다음 p (형재)
+		div ~ p { background-color: #FFE4E1; }
+        // div 태그 바로 다음 p (다음 형재)
+        div + p { color: red; }
+

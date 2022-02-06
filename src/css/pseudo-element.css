@@ -1,0 +1,15 @@
+p::selection {
+  color: #FF4500; }
+
+p::first-letter {
+  font-size: 1.3em;
+  font-weight: bold; }
+
+p::first-line {
+  background-color: aquamarine; }
+
+p::before {
+  content: url("/src/resource/img_css_image_sprites.png"); }
+
+p::after {
+  content: url("/src/resource/img_css_image_sprites.png"); }
