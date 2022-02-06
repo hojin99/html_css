@@ -5,8 +5,8 @@ node-sass 설치
 npm i node-sass -g  
 
 ## 실행  
-* 자동으로 scss를 css로 변환하도록 대상 scss파일에 대해서 감시 실행 (package.json의 scripts이용)  
-`node-sass --watch html/basic/basic.scss html/basic/basic.css`  
+* 자동으로 scss를 css로 변환하도록 대상 scss폴더에 대해서 감시 실행 (package.json의 scripts이용)  
+`node-sass --watch src/scss/ -o src/scss/`  
 * Live Server를 이용해서 html을 웹브라우저를 통해 실행해서 테스트  
 
 ## 참조  
